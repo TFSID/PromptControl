@@ -1,0 +1,12 @@
+# Jules Prompt Studio Environment Variables Example
+
+# Jules API Configuration
+JULES_API_URL="https://jules.googleapis.com/v1alpha/sessions"
+
+# LLM API Configuration
+LLM_API_URL="https://api-ai.tegarfirman.site/v1/generate"
+# Replace with your actual LLM API key
+LLM_API_KEY="your_llm_api_key_here"
+
+# Default Model Selection
+DEFAULT_MODEL="gemini-flash-latest"
