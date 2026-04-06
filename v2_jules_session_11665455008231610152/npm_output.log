@@ -1,0 +1,64 @@
+
+> jules-prompt-studio@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+ ✓ Ready in 1756ms
+ ○ Compiling / ...
+ ✓ Compiled / in 6s (550 modules)
+ ✓ Compiled in 589ms (255 modules)
+ GET / 200 in 6635ms
+ ⨯ ./components/pages/Builder.tsx
+Error: 
+  [31mx[0m You're importing a component that needs useState. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  [31m|[0m Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  [31m|[0m 
+  [31m|[0m 
+   ,-[[36;1;4m/app/components/pages/Builder.tsx[0m:1:1]
+ [2m1[0m | import React, { useState } from "react";
+   : [31;1m                ^^^^^^^^[0m
+ [2m2[0m | import { usePromptBuilder } from "@/hooks/usePromptBuilder";
+ [2m3[0m | import { 
+ [2m4[0m |   CONTEXT_SYSTEM_PROMPT, 
+   `----
+
+Import trace for requested module:
+./components/pages/Builder.tsx
+./app/page.tsx
+ ○ Compiling /_error ...
+ ⨯ ./components/pages/Builder.tsx
+Error: 
+  [31mx[0m You're importing a component that needs useState. It only works in a Client Component but none of its parents are marked with "use client", so they're Server Components by default.
+  [31m|[0m Learn more: https://nextjs.org/docs/getting-started/react-essentials
+  [31m|[0m 
+  [31m|[0m 
+   ,-[[36;1;4m/app/components/pages/Builder.tsx[0m:1:1]
+ [2m1[0m | import React, { useState } from "react";
+   : [31;1m                ^^^^^^^^[0m
+ [2m2[0m | import { usePromptBuilder } from "@/hooks/usePromptBuilder";
+ [2m3[0m | import { 
+ [2m4[0m |   CONTEXT_SYSTEM_PROMPT, 
+   `----
+
+Import trace for requested module:
+./components/pages/Builder.tsx
+./app/page.tsx
+ GET / 500 in 4911ms
+ ✓ Compiled /_error in 1106ms (755 modules)
+ GET / 200 in 414ms
+ ✓ Compiled in 1492ms (755 modules)
+ ✓ Compiled in 594ms (769 modules)
+ ✓ Compiled in 160ms (452 modules)
+ ✓ Compiled in 256ms (452 modules)
+ ✓ Compiled in 225ms (452 modules)
+ ✓ Compiled in 190ms (452 modules)
+ ✓ Compiled in 1291ms (769 modules)
+ ✓ Compiled in 501ms (769 modules)
